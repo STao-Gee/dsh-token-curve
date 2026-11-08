@@ -10,11 +10,13 @@
 ## 安装
 
 ```sh
-# 从 GitHub 直接装
-dsh plugin add github:STao-Gee/dsh-token-curve
+dsh plugin add dsh-token-curve
 ```
 
 装完重启 Harness（或在插件页启用 `include:token-curve`），打开任意会话，按 `Ctrl+Alt+U`，或点会话头右侧的曲线图标。
+
+> 也可以从源码装：`dsh plugin add github:STao-Gee/dsh-token-curve`。
+> 这条路**要求本机装了 Git**，没有 Git 会报 `git ls-remote failed`——普通用户请用上面那条 npm 的。
 
 - 需要 **DeepSeek Harness >= 0.2.1-rc.5**，桌面端（Electron）。
 - Windows 上验证过；macOS / Linux 未验证。
