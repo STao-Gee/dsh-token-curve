@@ -1,0 +1,4 @@
+# 插入右栏「Token 曲线」宿主条目；浏览器半边由 dsh.client 声明自动随包发送。
+- insert:
+    - id: token-curve
+      name: 'dsh-token-curve'

@@ -1,0 +1,53 @@
+{
+  "name": "dsh-token-curve",
+  "version": "0.4.1",
+  "description": "右栏 Token 曲线 + 账本：当前对话逐轮 token 与费用；本机全部会话按月/按周汇总、逐轮明细、导出 Excel；顶部实时显示账户余额与本次会话费用。 Sidebar token and cost curve plus a local session ledger with monthly/weekly rollups, per-turn detail and Excel export.",
+  "type": "module",
+  "license": "MIT",
+  "author": "STao-Gee",
+  "homepage": "https://github.com/STao-Gee/dsh-token-curve#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STao-Gee/dsh-token-curve.git"
+  },
+  "bugs": {
+    "url": "https://github.com/STao-Gee/dsh-token-curve/issues"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "token",
+    "usage",
+    "cost",
+    "billing",
+    "xlsx",
+    "balance",
+    "sidebar",
+    "chart"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  }
+}
